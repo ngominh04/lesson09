@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Login Information</title>
+   <style>
+       *{margin: 0;padding: 0;}
+       html{
+        background-color: rgb(90, 8, 167);
+       }
+       section{
+           width: 50%;
+           justify-content: space-between;
+           background-color: aliceblue;
+           margin: 2rem auto;
+           border: 1px solid black;
+           border-radius: 10px;
+       }
+       .zone1{
+            background-color: rgb(179, 109, 245);
+            border: 1px solid black;
+           border-top-right-radius: 10px;
+           border-top-left-radius: 10px;
+       }
+       .name, .pass{
+           padding: 0 0 0 20px;
+       }
+       .check ,.button_reset{
+           padding: 0.5em 0.5rem 0.5rem 5rem ;
+           margin: 0.5rem;
+       }
+       .text-danger{
+        color: red;
+        display: none;
+       }
+   </style>
+</head>
+<body>
+   <section>
+    <div class="zone1">
+        <br>
+       <h1>Login Information</h1>
+       <br>
+       
+    </div>
+        
+       <form action="" method="post" name="frmlogin">
+        <br>
+           <div class="name">
+               <label for="username">Username:</label>
+               <input type="text" id="username" name="username" placeholder="Nhập username">
+               <p id="username1" class="text-danger">Bạn chưa nhập tài khoản</p>
+           </div>
+           <div class="pass">
+               <br>
+               <label for="pass">Password:</label>
+               <input type="password" id="pass" name="pass" placeholder="Nhập password">
+               <p id="pass1" class="text-danger">Bạn chưa nhập mật khẩu</p>
+           </div>
+           <div class="check">
+               <input type="checkbox" id="RS" value="Remember Set" checked>
+               <label for="RS">Remember Set</label>
+           </div>
+           <div class="button_reset" >
+               <input type="button" name="btnLogin" value="login" onclick="fn_login()">
+               <input type="reset" name="btnReset" value="Reset">
+           </div>
+       </form>
+   </section>
+
+   <script src="./js/scriptVD.js"></script>
+</body>
+</html>
